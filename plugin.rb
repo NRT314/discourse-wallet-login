@@ -7,7 +7,8 @@
 enabled_site_setting :wallet_login_enabled
 
 register_asset "stylesheets/common/wallet.scss"
-register_asset "javascripts/discourse/templates/connectors/login-after-login-buttons/wallet-login.hbs"
+
+# The line registering the .hbs file has been REMOVED as it is no longer needed.
 
 after_initialize do
   # no server-side code required now

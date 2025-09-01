@@ -1,0 +1,6 @@
+plugins:
+  wallet_login_enabled:
+    default: true
+    client: true
+    type: bool
+    name: enable wallet login button

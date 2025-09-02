@@ -1,0 +1,12 @@
+{{#if (and siteSettings.wallet_login_enabled (not currentUser))}}
+  <div class="custom-sso-login">
+    <a
+      href="https://donate-vite.onrender.com/sso/discourse-login"
+      class="btn btn-primary btn-block custom-sso-btn"
+      rel="nofollow noopener"
+    >
+      {{d-icon "wallet"}}
+      Войти через криптокошелёк
+    </a>
+  </div>
+{{/if}}

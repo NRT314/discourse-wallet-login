@@ -1,8 +1,9 @@
-{{#if (and siteSettings.wallet_login_enabled (not currentUser))}}
+{{#if (and this.siteSettings.wallet_login_enabled (not this.currentUser))}}
   <div class="custom-sso-login">
     <a
       href="/session/sso?return_path=/"
       class="btn btn-primary btn-block custom-sso-btn"
+      data-turbo="false"
       rel="nofollow noopener"
     >
       {{d-icon "wallet"}}

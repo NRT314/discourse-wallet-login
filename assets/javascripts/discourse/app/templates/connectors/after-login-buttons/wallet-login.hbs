@@ -1,10 +1,11 @@
 {{#if (and this.siteSettings.wallet_login_enabled (not this.currentUser))}}
   <div class="custom-sso-login">
     <a
-      href="/session/sso?return_path=/"
+      href="/session/sso?return_path=%2F"
       class="btn btn-primary btn-block custom-sso-btn"
       data-turbo="false"
-      rel="nofollow noopener"
+      rel="nofollow noopener noreferrer"
+      aria-label="Login with crypto wallet (SSO)"
     >
       {{d-icon "wallet"}}
       Войти через криптокошелёк

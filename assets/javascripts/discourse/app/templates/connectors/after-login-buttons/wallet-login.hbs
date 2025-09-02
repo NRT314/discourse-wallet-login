@@ -1,7 +1,7 @@
 {{#if (and siteSettings.wallet_login_enabled (not currentUser))}}
   <div class="custom-sso-login">
     <a
-      href="https://donate-vite.onrender.com/sso/discourse-login"
+      href="/session/sso?return_path=/"
       class="btn btn-primary btn-block custom-sso-btn"
       rel="nofollow noopener"
     >
